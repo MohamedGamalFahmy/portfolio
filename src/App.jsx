@@ -1,15 +1,28 @@
 import React from 'react'
+import './index.css'
+import Project from './Components/Project'
+import Navbar from './Components/Navbar'
+import Hero from './Components/Hero'
+import Contact from './Components/Contact'
+import Footer from './Components/Footer'
 
 const App = () => {
   return (
-    <div className='container mx-0 max-w-full bg-amber-300   '>
-      <ul className=' flex  items-center justify-around'>
-        <li>home</li>
-        <li>page</li>
-        <li>stting</li>
-      </ul>
-    </div>
-  )
-}
+    <>
+      <Navbar />
+      <Hero />
+      <Project/>
+      <Contact />
+      <Footer />
+     
+       </>
+      )
 
+    }
+
+
+
+
+
+   
 export default App
