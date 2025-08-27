@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { me } from '../assets'
 
 const Hero = () => {
     return (
@@ -30,7 +30,7 @@ const Hero = () => {
                         </a>
                         <a
                             href="/cv.pdf"
-                            className="border border-gray-500 hover:border-white text-gray-300 hover:text-white px-6 py-3 rounded-full transition"
+                            className="border border-gray-500  hover:border-white text-gray-300 hover:text-white px-6 py-3 rounded-full transition"
                         >
                             Download CV
                         </a>
@@ -40,7 +40,7 @@ const Hero = () => {
                 {/* الصورة - يمين */}
                 <div className="flex-1 flex justify-center order-1 md:order-2">
                     <img
-                        src="src\assets\a-close-up-of-saudi-arabian-preview-19843.jpg"
+                        src={me}
                         alt="My Profile"
                         className="rounded-full w-64 h-64 object-cover shadow-lg border-4 border-teal-500"
                     />

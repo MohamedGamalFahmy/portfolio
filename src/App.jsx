@@ -9,6 +9,10 @@ import Footer from './Components/Footer'
 const App = () => {
   return (
     <>
+      <div className="absolute inset-0 bg-black">
+        <div className="stars"></div>
+        <div className="twinkling"></div>
+      </div>
       <Navbar />
       <Hero />
       <Project/>

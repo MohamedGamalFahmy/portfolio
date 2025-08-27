@@ -10,11 +10,13 @@
 
 .stars {
   background: #000 url("https://www.transparenttextures.com/patterns/stardust.png") repeat;
+    background-size: cover;
   z-index: 0;
 }
 
 .twinkling {
   background: transparent url("https://www.transparenttextures.com/patterns/stardust.png") repeat;
+    background-size: cover;
   animation: moveStars 200s linear infinite, twinkle 2s infinite ease-in-out;
   opacity: 0.6;
   z-index: 1;
