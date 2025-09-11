@@ -3,11 +3,10 @@ import { me1 } from '../assets'
 
 const Hero = () => {
     return (
-  <section  id="Hero" className="relative flex items-center justify-between h-screen px-10 text-white overflow-hidden  ">
+  <section  id="Hero" className=" xs:mt-20  xs:pb-23  relative flex items-center justify-between h-screen px-10 text-white overflow-hidden  ">
       
-
             {/* المحتوى */}
-            <div className="relative z-10 container mx-auto flex flex-col md:flex-row items-center gap-12  ">
+            <div className=" relative z-10 container mx-auto flex flex-col md:flex-row items-center gap-12  ">
 
                 {/* النص - شمال */}
                 <div className="flex-1 text-center md:text-left order-2 md:order-1">
@@ -34,11 +33,11 @@ const Hero = () => {
                 </div>
 
                 {/* الصورة - يمين */}
-                <div className="flex-1 flex justify-center order-1 md:order-2 sm:mt-20 ">
+                <div className="sm:mt-20  flex-1 flex justify-center order-1 md:order-2  ">
                     <img
                         src={me1}
                         alt="My Profile"
-                        className=" w-[300px] h-[300px] p-2 m-2 rounded-xl items-center  shadow-2xl shadow-teal-500  "
+                        className=" xs:pt-15 sm:pt-0 w-[300px] h-[300px] p-2 m-2 rounded-xl items-center  shadow-2xl shadow-teal-500  "
                     />
                 </div>
             </div>

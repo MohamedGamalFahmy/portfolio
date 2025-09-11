@@ -1,10 +1,10 @@
  
 
 body{
-  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  background: linear-gradient(to bottom right, #080B14, #070f33, #070A14);
 }
 
 @import "tailwindcss";
 @theme {
-  --breakpoint-xs: 300px;
+  --breakpoint-xs: 400px;
 }

@@ -10,8 +10,8 @@ const Project = () => {
   ];
 
   return (
-    <section id = "Project"  className="py-20 relative z-10  text-white  bg-[#0a0f1c] sm:mt-10 ">
-      <div className="max-w-full mx-auto px-6  ">
+    <section id = "Project"  className="py-20 relative z-10  text-white  bg-[#101832]  sm:mt-10 ">
+      <div className=" max-w-full mx-auto px-6  ">
         <h2 className="text-3xl font-bold text-center mb-12">🚀 My Projects</h2>
         <div className= " sm:grid-cols-1  md:grid md:grid-cols-2 lg:grid-cols-3  gap-8">
           {projects.map((p, i) => (

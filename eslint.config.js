@@ -13,10 +13,6 @@ export default defineConfig([
       reactHooks.configs['recommended-latest'],
       reactRefresh.configs.vite,
     ],
-     screens: {
-      'xs': '0px',   // جديد
-
-    },
     languageOptions: {
       ecmaVersion: 2020,
       globals: globals.browser,
