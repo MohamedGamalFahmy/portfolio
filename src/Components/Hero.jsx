@@ -1,22 +1,18 @@
 import React from 'react'
-import { me } from '../assets'
+import { me1 } from '../assets'
 
 const Hero = () => {
     return (
-  <section className="relative flex items-center justify-between h-screen px-10 text-white overflow-hidden">
-      {/* الخلفية النجوم */}
-      <div className="absolute inset-0 bg-black">
-        <div className="stars"></div>
-        <div className="twinkling"></div>
-      </div>
+  <section  id="Hero" className="relative flex items-center justify-between h-screen px-10 text-white overflow-hidden  ">
+      
 
             {/* المحتوى */}
-            <div className="relative z-10 container mx-auto flex flex-col md:flex-row items-center gap-12">
+            <div className="relative z-10 container mx-auto flex flex-col md:flex-row items-center gap-12  ">
 
                 {/* النص - شمال */}
                 <div className="flex-1 text-center md:text-left order-2 md:order-1">
                     <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">
-                        Hi, I'm <span className="text-teal-400">Mohamed</span>
+                        I'm <span className="text-teal-400">Mohamed Gamal</span>
                     </h1>
                     <p className="text-lg text-gray-300 mb-6">
                         Front-End Developer | Building modern web apps with React & Tailwind
@@ -38,11 +34,11 @@ const Hero = () => {
                 </div>
 
                 {/* الصورة - يمين */}
-                <div className="flex-1 flex justify-center order-1 md:order-2">
+                <div className="flex-1 flex justify-center order-1 md:order-2 sm:mt-20 ">
                     <img
-                        src={me}
+                        src={me1}
                         alt="My Profile"
-                        className="rounded-full w-64 h-64 object-cover shadow-lg border-4 border-teal-500"
+                        className=" w-[300px] h-[300px] p-2 m-2 rounded-xl items-center  shadow-2xl shadow-teal-500  "
                     />
                 </div>
             </div>

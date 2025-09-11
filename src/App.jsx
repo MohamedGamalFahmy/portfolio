@@ -8,25 +8,22 @@ import Footer from './Components/Footer'
 
 const App = () => {
   return (
-    <>
-      <div className="absolute inset-0 bg-black">
-        <div className="stars"></div>
-        <div className="twinkling"></div>
+    < >
+      <div className=' bg-gradient-to-br  from-[#080B14] via-[#070f33] to-[#070A14]'>
+        <Navbar />
+        <Hero />
+        <Project />
+        <Contact />
+        <Footer />
       </div>
-      <Navbar />
-      <Hero />
-      <Project/>
-      <Contact />
-      <Footer />
-     
-       </>
-      )
+    </>
+  )
 
-    }
+}
 
 
 
 
 
-   
+
 export default App
