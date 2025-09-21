@@ -6,5 +6,5 @@ body{
 
 @import "tailwindcss";
 @theme {
-  --breakpoint-xs: 400px;
+  --breakpoint-xs: 300px;
 }
