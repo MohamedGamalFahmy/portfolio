@@ -1,48 +1,58 @@
-import React from 'react'
-import { me1 } from '../assets'
+import React from "react";
+import {  FaGithub, FaGoogle,  FaLinkedin } from "react-icons/fa";
+import {me1 ,  bg2} from '../assets'
 
-const Hero = () => {
-    return (
-  <section  id="Hero" className=" xs:mt-3  md:pb-0 md:my-0 border relative flex items-center justify-between  px-10 text-white overflow-hidden  ">
-      
-            {/* المحتوى */}
-            <div className="  z-10 container mx-auto flex flex-col md:flex-row items-center gap-12  md:pb-0 md:my-0 ">
- 
-                {/* النص - شمال */}
-                <div className="xs:mb-7 flex-1 text-center md:text-left order-2 md:order-1">
-                    <h1 className="  text-4xl md:text-6xl font-bold text-white mb-4">
-                        I'm <span className="text-teal-400">Mohamed Gamal</span>
-                    </h1>
-                    <p className="text-lg text-gray-300 mb-6">
-                        Front-End Developer | Building modern web apps with React & Tailwind
-                    </p>
-                    <div className=" flex gap-4 justify-center md:justify-start">
-                        <a
-                            href="#contact"
-                            className="bg-teal-500 hover:bg-teal-600 text-white px-6 py-3 rounded-full shadow-lg transition"
-                        >
-                            Hire Me
-                        </a>
-                        <a
-                            href="/cv.pdf"
-                            className="border border-gray-500  hover:border-white text-gray-300 hover:text-white px-6 py-3 rounded-full transition"
-                        >
-                            Download CV
-                        </a>
-                    </div>
-                </div>
+ const Hero = () => {
+      const icon = [
+        { id: 1, img: <FaGithub />, name: "github", golink: "https://github.com/MohamedGamalFahmy" },
+        { id: 2, img: <FaLinkedin />, name: "Linkedin", golink: "#" },
+        { id: 4, img: <FaGoogle />, name: "Gmail", golink: "#" },
+    ];
+  return (
+    <section
+      id="hero"
+      className="relative h-screen flex flex-col items-center justify-center text-white text-center"
+      style={{ backgroundImage: `url(${bg2})`, backgroundSize: "cover", backgroundPosition: "center" }}
+    >
+      {/* Overlay غامق */}
+      <div className="absolute inset-0 bg-black/60"></div>
 
-                {/* الصورة - يمين */}
-                <div className=" xs:mt-32  md:mt-0 flex-1 flex justify-center order-1 md:order-2  ">
-                    <img
-                        src={me1}
-                        alt="My Profile"
-                        className=" md:mt-0  w-[300px] h-[350px] p-2 m-2 rounded-xl items-center  shadow-2xl shadow-teal-500  "
-                    />
-                </div>
-            </div>
-        </section>
-    )
-}
+      {/* المحتوى */}
+      <div className="relative z-10 flex flex-col items-center gap-4">
+        {/* الصورة الشخصية */}
+        <img
+          src={me1}
+          alt="My Profile"
+          className="w-52 h-52 rounded-full border-4 border-white shadow-lg  items-center"
+        />
 
-export default Hero
+        {/* النص */}
+        <h1 className="text-2xl md:text-4xl font-bold">Hello, I'm Mohamed Gamal</h1>
+        <p className="text-gray-300 text-lg md:text-xl">Frontend Developer</p>
+
+        {/* أيقونات السوشيال */}
+        <div className="flex gap-2 mt-4 text-2xl">
+      {icon.map((item) => (
+              <div id={item.id} className=' flex  ' >
+                <ul className='xs:p-3 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-teal-500   rounded-full  md:flex md:p-2 '>
+
+                  <li className=''>
+                    <a
+                    
+                    href={item.golink} 
+                    
+                    > {item.img}  </a>
+                  </li>
+
+                </ul>
+              </div>
+
+            ))}
+         
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Hero;

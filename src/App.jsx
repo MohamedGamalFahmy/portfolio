@@ -11,7 +11,7 @@ const App = () => {
     < >
       <div className=' bg-gradient-to-br  from-[#080B14] via-[#070f33] to-[#070A14]'>
         <Navbar />
-        <Hero />
+        <Hero  />
         <Project />
         <Contact />
         <Footer />
