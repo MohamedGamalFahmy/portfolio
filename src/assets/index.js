@@ -3,7 +3,7 @@ import me1 from "./mg.png";
 import bg1 from "./bg1.jpg";
 import bg2 from "./bg2.jpg";
 import bg3 from "./bg3.jpg";
-import coffe from "./cofeshop.png";
+import coffe from "./coffe.jpg";
 
 
 
